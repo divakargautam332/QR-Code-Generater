@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .qr-card {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 320px;
+        }
+
+        .qr-card h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .qr-card img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 15px;
+        }
+
+        .qr-card p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="qr-card">
+        <h1>Generated QR</h1>
+        <img src="<%= QRUrl %>" alt="QR image">
+        <p>Scan me</p>
+    </div>
+</body>
+
+</html>
